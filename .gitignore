@@ -4,6 +4,7 @@
 /build
 .env
 # Logs
+docker-compose.yml
 logs
 *.log
 npm-debug.log*

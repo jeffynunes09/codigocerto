@@ -27,7 +27,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: nunesjefferson425/codigocerto-app
+        tags: nunesjefferson425/codigocerto-app:latest
 
   deploy:
     runs-on: ubuntu-latest
@@ -35,7 +35,7 @@ jobs:
 
     steps:
     - name: Trigger Render Deploy
-      uses: nunesjefferson425/codigocerto-app@latest
+      uses: r0adkll/deploy-render@v1
       with:
         serviceId: ${{ secrets.RENDER_SERVICE_ID }}
         apiKey: ${{ secrets.RENDER_API_KEY }}

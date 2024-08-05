@@ -35,7 +35,7 @@ jobs:
 
     steps:
     - name: Trigger Render Deploy
-      uses: jeffynunes09/codigocerto@latest
+      uses: jeffynunes09/codigocerto/tree/main
       with:
         serviceId: ${{ secrets.RENDER_SERVICE_ID }}
         apiKey: ${{ secrets.RENDER_API_KEY }}

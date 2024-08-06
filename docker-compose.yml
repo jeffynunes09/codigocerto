@@ -7,4 +7,4 @@ services:
     ports:
       - '3000:3000'
     environment:
-      DATABASE_URL: postgresql://projetocodigocerto_xez3_user:dvxV8oQ21zMyUYuuaPhc5Q0tVhUGELD3@dpg-cqmli0tsvqrc73fc8ekg-a.oregon-postgres.render.com/projetocodigocerto_xez3
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}

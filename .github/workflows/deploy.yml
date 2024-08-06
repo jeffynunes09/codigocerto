@@ -36,7 +36,7 @@ jobs:
     steps:
     - name:  Deploy
       
-      uses: jeffynunes09/render-deploy@v1.4.4
+      uses: actions/checkout@v3
       with:
         serviceId: ${{ secrets.RENDER_SERVICE_ID }}
         apiKey: ${{ secrets.RENDER_API_KEY }}
